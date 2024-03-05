@@ -2,32 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+body{
+  background-color: #93E9BE;
+
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 100px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+input {
+  border-radius: 10px;
+  padding-left: 15px;
+  font-size: 1.3rem;
+  margin: 10px;
+  width: 220px;
+  height: 60px;
+  box-shadow: 5px 5px 10px rgb(131, 131, 131);
+}
+
+button{
+  border-radius: 10px;
+  font-size: 1.3rem;
+  margin: 20px 10px;
+  background-color: #fff;
+  color: #93E9BE;
+  width:220px;
+  height: 60px;
+  box-shadow: 5px 5px 10px rgb(131, 131, 131);
+}
+
+button:hover{
+  background-color: rgb(233, 233, 233);
+}
+
+.box {
+  background-color: white;
+  border-radius: 10px;
+  width: 200px;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 10px;
 }
